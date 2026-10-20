@@ -1,0 +1,193 @@
+[
+  {
+    "id": 1,
+    "nama": "Kaos Basic Hitam",
+    "harga": 99000,
+    "ikon": "👕",
+    "kategori": "Kaos",
+    "bahan": "Katun Combed 24s",
+    "warna": "Hitam",
+    "hex": "#111111",
+    "baru": true,
+    "deskripsi": "Kaos polos potongan regular yang adem dan tidak mudah melar."
+  },
+  {
+    "id": 2,
+    "nama": "Hoodie Oversize",
+    "harga": 249000,
+    "lama": 329000,
+    "ikon": "🧥",
+    "kategori": "Hoodie",
+    "bahan": "Fleece Cotton 280gsm",
+    "warna": "Abu Tua",
+    "hex": "#4a4a4a",
+    "deskripsi": "Hoodie potongan oversize dengan bagian dalam lembut dan hangat."
+  },
+  {
+    "id": 3,
+    "nama": "Celana Cargo",
+    "harga": 219000,
+    "ikon": "👖",
+    "kategori": "Celana",
+    "bahan": "Twill Cotton",
+    "warna": "Hijau Army",
+    "hex": "#5b6b3a",
+    "baru": true,
+    "deskripsi": "Celana cargo dengan banyak kantong, kuat dan nyaman untuk harian."
+  },
+  {
+    "id": 4,
+    "nama": "Kemeja Flannel",
+    "harga": 179000,
+    "lama": 229000,
+    "ikon": "👔",
+    "kategori": "Kemeja",
+    "bahan": "Flannel Katun",
+    "warna": "Merah",
+    "hex": "#b3262e",
+    "deskripsi": "Kemeja flannel tebal yang pas dipakai santai maupun berlapis."
+  },
+  {
+    "id": 5,
+    "nama": "Kaos Graphic Tee",
+    "harga": 119000,
+    "ikon": "👕",
+    "kategori": "Kaos",
+    "bahan": "Katun Combed 30s",
+    "warna": "Putih",
+    "hex": "#f2f2f2",
+    "baru": true,
+    "deskripsi": "Kaos dengan sablon grafis eksklusif Humble People."
+  },
+  {
+    "id": 6,
+    "nama": "Jaket Bomber",
+    "harga": 299000,
+    "ikon": "🧥",
+    "kategori": "Jaket",
+    "bahan": "Parasut Taslan",
+    "warna": "Hitam",
+    "hex": "#111111",
+    "deskripsi": "Jaket bomber ringan, tahan angin, dan tampil kasual."
+  },
+  {
+    "id": 7,
+    "nama": "Celana Chino",
+    "harga": 189000,
+    "ikon": "👖",
+    "kategori": "Celana",
+    "bahan": "Katun Stretch",
+    "warna": "Krem",
+    "hex": "#e8dcc2",
+    "deskripsi": "Celana chino slim fit yang elastis dan rapi untuk berbagai acara."
+  },
+  {
+    "id": 8,
+    "nama": "Topi Snapback",
+    "harga": 79000,
+    "ikon": "🧢",
+    "kategori": "Topi",
+    "bahan": "Katun Twill",
+    "warna": "Hitam",
+    "hex": "#111111",
+    "deskripsi": "Topi snapback dengan bordir logo, ukuran bisa disetel.",
+    "ukuran": [
+      "All Size"
+    ]
+  },
+  {
+    "id": 9,
+    "nama": "Kaos Oversize Putih",
+    "harga": 109000,
+    "ikon": "👕",
+    "kategori": "Kaos",
+    "bahan": "Katun Combed 24s",
+    "warna": "Putih",
+    "hex": "#f2f2f2",
+    "deskripsi": "Kaos oversize jatuh dan longgar, nyaman untuk gaya santai."
+  },
+  {
+    "id": 10,
+    "nama": "Kaos Heavyweight Krem",
+    "harga": 129000,
+    "lama": 159000,
+    "ikon": "👕",
+    "kategori": "Kaos",
+    "bahan": "Katun 20s Heavyweight",
+    "warna": "Krem",
+    "hex": "#e8dcc2",
+    "deskripsi": "Kaos tebal dan kokoh, bentuknya tetap rapi setelah dicuci."
+  },
+  {
+    "id": 11,
+    "nama": "Hoodie Zip Hitam",
+    "harga": 269000,
+    "ikon": "🧥",
+    "kategori": "Hoodie",
+    "bahan": "Fleece Cotton 300gsm",
+    "warna": "Hitam",
+    "hex": "#111111",
+    "baru": true,
+    "deskripsi": "Hoodie resleting dengan dua kantong depan, hangat dan praktis."
+  },
+  {
+    "id": 12,
+    "nama": "Kemeja Oxford Biru",
+    "harga": 199000,
+    "ikon": "👔",
+    "kategori": "Kemeja",
+    "bahan": "Oxford Katun",
+    "warna": "Biru",
+    "hex": "#5b84b1",
+    "deskripsi": "Kemeja oxford klasik untuk tampilan rapi sehari-hari."
+  },
+  {
+    "id": 13,
+    "nama": "Jaket Denim",
+    "harga": 329000,
+    "lama": 399000,
+    "ikon": "🧥",
+    "kategori": "Jaket",
+    "bahan": "Denim 12oz",
+    "warna": "Biru Denim",
+    "hex": "#3d5a80",
+    "deskripsi": "Jaket denim klasik yang makin bagus seiring pemakaian."
+  },
+  {
+    "id": 14,
+    "nama": "Celana Jogger",
+    "harga": 159000,
+    "ikon": "👖",
+    "kategori": "Celana",
+    "bahan": "Fleece Ringan",
+    "warna": "Abu Muda",
+    "hex": "#9a9a9a",
+    "deskripsi": "Celana jogger karet di pergelangan, ringan dan lentur."
+  },
+  {
+    "id": 15,
+    "nama": "Celana Jeans Straight",
+    "harga": 249000,
+    "ikon": "👖",
+    "kategori": "Celana",
+    "bahan": "Denim Stretch",
+    "warna": "Biru Denim",
+    "hex": "#3d5a80",
+    "deskripsi": "Jeans potongan lurus yang nyaman dan mudah dipadukan."
+  },
+  {
+    "id": 16,
+    "nama": "Topi Bucket",
+    "harga": 89000,
+    "ikon": "🧢",
+    "kategori": "Topi",
+    "bahan": "Katun Canvas",
+    "warna": "Krem",
+    "hex": "#e8dcc2",
+    "baru": true,
+    "deskripsi": "Topi bucket ringan untuk pelindung panas sehari-hari.",
+    "ukuran": [
+      "All Size"
+    ]
+  }
+]

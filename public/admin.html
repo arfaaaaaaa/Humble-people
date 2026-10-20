@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin - Humble People</title>
+<link rel="icon" href="logo-putih.png">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial, Helvetica, sans-serif; background: #f4f4f2; color: #111; }
+  .bar { background: #fff; border-bottom: 1px solid #e5e5e5; padding: 16px 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  .bar img { height: 38px; vertical-align: middle; margin-right: 12px; }
+  .bar h1 { font-size: 20px; display: inline; vertical-align: middle; }
+  .bar select, .bar button { padding: 9px 12px; border: 1px solid #ccc; background: #fff; font: inherit; font-size: 14px; cursor: pointer; }
+  .bar a { margin-left: 8px; font-size: 14px; }
+  main { max-width: 900px; margin: 24px auto; padding: 0 16px; }
+  .order { background: #fff; border-radius: 10px; padding: 18px; margin-bottom: 14px; font-size: 14px; line-height: 1.5; }
+  .kepala { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
+  .kepala select { padding: 7px 10px; font: inherit; }
+  .abu { color: #6b6b6b; font-size: 13px; }
+  .baris { display: flex; justify-content: space-between; padding: 3px 0; }
+  .total { border-top: 1px solid #eee; margin-top: 6px; padding-top: 6px; font-weight: bold; }
+  .info { background: #fff; padding: 28px; border-radius: 10px; text-align: center; line-height: 1.7; }
+  .wa { display: inline-block; margin-top: 8px; padding: 7px 14px; border: 1px solid #111; font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="bar">
+  <div><img src="logo-putih.png" alt="Humble People"><h1>Kelola Pesanan</h1></div>
+  <div>
+    <select id="filter"><option value="">Semua status</option></select>
+    <button type="button" id="muat">Segarkan</button>
+    <a href="/">← Ke toko</a>
+  </div>
+</div>
+<main id="isi"><p class="info">Memuat pesanan...</p></main>
+<script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+/* ===== MODAL, FORM, LOGIN & PROFIL (dipakai banyak fitur) ===== */
+.ikon-btn { background: none; border: none; font-size: 20px; cursor: pointer; line-height: 1; padding: 4px; font-family: inherit; }
+#btn-profil.masuk { width: 34px; height: 34px; border-radius: 50%; background: var(--oranye); color: var(--hitam); font-size: 15px; font-weight: bold; }
+
+.modal-latar { position: fixed; inset: 0; background: rgba(0,0,0,.55); display: flex; align-items: center; justify-content: center; padding: 16px; z-index: 200; opacity: 0; transition: .25s; }
+.modal-latar.tampil { opacity: 1; }
+.modal { position: relative; background: var(--putih); border-radius: 14px; width: 100%; max-height: 92vh; overflow-y: auto; padding: 26px; transform: translateY(20px); transition: .25s; box-shadow: 0 20px 60px rgba(0,0,0,.3); }
+.modal-latar.tampil .modal { transform: none; }
+.modal-x { position: absolute; top: 14px; right: 14px; width: 34px; height: 34px; border: none; border-radius: 50%; background: var(--krem); cursor: pointer; z-index: 1; }
+.modal-x:hover { background: var(--kuning); }
+.modal h2 { font-size: 22px; margin-bottom: 6px; padding-right: 40px; }
+.sub { color: var(--abu-teks); font-size: 14px; margin-bottom: 18px; line-height: 1.5; }
+
+.fld { display: block; margin-bottom: 14px; }
+.fld span { display: block; font-size: 13px; font-weight: bold; margin-bottom: 5px; }
+.fld input, .fld textarea { width: 100%; padding: 11px 12px; border: 1px solid #ccc; border-radius: 8px; font: inherit; font-size: 14px; }
+.fld input:focus, .fld textarea:focus { outline: 2px solid var(--teal); border-color: var(--teal); }
+.fld input[readonly] { background: #f2f2f2; color: #777; }
+.baris2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.galat { background: #fdecea; color: #b00020; padding: 9px 12px; border-radius: 8px; font-size: 13px; margin-bottom: 14px; }
+.galat[hidden] { display: none; }
+
+.tab { display: flex; background: var(--krem); border-radius: 10px; padding: 4px; margin-bottom: 20px; }
+.tab button { flex: 1; padding: 10px; border: none; background: none; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 14px; }
+.tab button.aktif { background: var(--teal); }
+
+.btn-blok { display: block; width: 100%; text-align: center; margin-top: 6px; }
+.btn-teks { background: none; border: none; color: var(--abu-teks); cursor: pointer; font-size: 13px; text-decoration: underline; padding: 6px; font-family: inherit; }
+.tombol-garis { border: 1px solid var(--hitam); background: transparent; padding: 14px 24px; cursor: pointer; font-size: 15px; transition: .2s; }
+.tombol-garis:hover { background: var(--hitam); color: var(--putih); }
+
+.kotak { border: 1px solid #e5e5e5; border-radius: 10px; padding: 14px 16px; margin-bottom: 12px; font-size: 14px; line-height: 1.5; }
+.kotak h4 { margin-bottom: 8px; }
+.profil-kepala { display: flex; gap: 14px; align-items: center; margin-bottom: 16px; }
+.profil-kepala .sub { margin: 0; }
+.avatar { width: 56px; height: 56px; border-radius: 50%; background: var(--oranye); display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; flex-shrink: 0; }
+.toast { z-index: 300; }
+@media (max-width: 520px) { .baris2 { grid-template-columns: 1fr; } .modal { padding: 20px 16px; } }
+
+/* ===== Login Google & daftar favorit ===== */
+.atau { display: flex; align-items: center; gap: 12px; margin: 18px 0; color: var(--abu-teks); font-size: 13px; }
+.atau::before, .atau::after { content: ""; flex: 1; height: 1px; background: #ddd; }
+#g-tombol { display: flex; justify-content: center; min-height: 44px; }
+.g-btn { display: flex; gap: 10px; align-items: center; justify-content: center; width: 100%; padding: 11px; border: 1px solid #dadce0; border-radius: 6px; background: #fff; cursor: pointer; font-size: 14px; font-family: inherit; }
+.g-btn:hover { background: #f7f8f8; }
+.fav-item { display: grid; grid-template-columns: 70px 1fr auto; gap: 14px; align-items: center; padding: 12px 0; border-bottom: 1px solid #eee; }
+.fav-item .thumb { width: 70px; height: 70px; }
+.fav-info { cursor: pointer; }
+.fav-info h4 { margin-bottom: 3px; }

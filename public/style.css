@@ -1,0 +1,54 @@
+/* ===== 1. DASAR & WARNA (ubah warna tema di sini) ===== */
+:root {
+  --hitam: #111111; --putih: #ffffff; --abu: #f4f4f2; --garis: #e5e5e5; --abu-teks: #6b6b6b;
+  --teal: #29d2bd; --teal-gelap: #1fb3a1; --oranye: #ff9331; --kuning: #fecf3b; --krem: #fefcd5;
+  --merah: #d8261c; --aksen: #ff9331;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, Helvetica, sans-serif; color: var(--hitam); background: var(--putih); }
+a { text-decoration: none; color: inherit; }
+.wadah { max-width: 1400px; margin: 0 auto; padding: 0 24px; }
+.tombol { display: inline-block; background: var(--hitam); color: var(--putih); padding: 14px 32px; border: none; cursor: pointer; font-size: 15px; font-family: inherit; }
+.tombol:hover { background: var(--oranye); color: var(--hitam); }
+
+/* ===== 2. BAR PROMO ===== */
+.promo-bar { background: var(--hitam); color: var(--putih); font-size: 13px; letter-spacing: .5px; text-align: center; padding: 11px 44px; position: relative; }
+.promo-bar a { font-weight: bold; }
+.promo-bar u { margin-left: 8px; }
+.promo-bar button { position: absolute; right: 14px; top: 50%; transform: translateY(-50%); background: none; border: none; color: var(--putih); cursor: pointer; font-size: 14px; }
+
+/* ===== 3. HEADER & MENU ===== */
+header { position: sticky; top: 0; background: var(--putih); border-bottom: 1px solid var(--garis); z-index: 50; }
+.nav { display: flex; align-items: center; gap: 28px; height: 72px; }
+.logo img { height: 46px; display: block; }
+.menu { display: flex; gap: 24px; flex: 1; }
+.menu a { font-size: 14px; font-weight: bold; padding: 6px 0; border-bottom: 2px solid transparent; white-space: nowrap; }
+.menu a:hover, .menu a.aktif { border-bottom-color: var(--hitam); }
+.menu a.sale { color: var(--merah); }
+.kanan { display: flex; gap: 10px; align-items: center; margin-left: auto; }
+.kanan .ikon-btn { position: relative; padding: 6px; color: var(--hitam); }
+.badge { position: absolute; top: -4px; right: -6px; min-width: 18px; height: 18px; padding: 0 4px; border-radius: 99px; background: var(--oranye); color: var(--hitam); font-size: 11px; font-weight: bold; display: flex; align-items: center; justify-content: center; }
+.badge[hidden] { display: none; }
+.menu-toggle { display: none; font-size: 24px; }
+
+/* ===== 4. BAND MEMBER & FOOTER ===== */
+.member { background: var(--abu); text-align: center; padding: 56px 20px; }
+.member h2 { font-size: 26px; margin-bottom: 8px; }
+.member p { color: var(--abu-teks); margin-bottom: 22px; }
+footer { border-top: 1px solid var(--garis); padding: 50px 0 24px; }
+.footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; margin-bottom: 36px; }
+footer h4 { font-size: 13px; letter-spacing: 1px; margin-bottom: 16px; }
+footer li { list-style: none; margin-bottom: 10px; font-size: 14px; color: var(--abu-teks); }
+footer li a:hover { color: var(--hitam); text-decoration: underline; }
+.footer-bawah { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; border-top: 1px solid var(--garis); padding-top: 20px; font-size: 12px; color: var(--abu-teks); }
+
+/* ===== 5. TAMPILAN HP ===== */
+@media (max-width: 900px) {
+  .menu-toggle { display: block; }
+  .menu { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--putih); flex-direction: column; gap: 0; padding: 8px 24px 16px; border-bottom: 1px solid var(--garis); }
+  .menu.buka { display: flex; }
+  .menu a { padding: 12px 0; border: none; }
+  .nav { gap: 12px; }
+  .logo img { height: 38px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}

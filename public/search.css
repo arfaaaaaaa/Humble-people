@@ -1,0 +1,14 @@
+/* ===== SEARCH ===== */
+.cari-latar { position: fixed; inset: 0; background: rgba(0,0,0,.55); z-index: 200; display: flex; justify-content: center; align-items: flex-start; padding: 70px 16px 16px; opacity: 0; visibility: hidden; transition: .25s; }
+.cari-latar.tampil { opacity: 1; visibility: visible; }
+.cari-kotak { background: var(--putih); width: 100%; max-width: 640px; border-radius: 14px; padding: 16px; max-height: 80vh; overflow-y: auto; box-shadow: 0 20px 60px rgba(0,0,0,.3); }
+.cari-input { display: flex; align-items: center; gap: 10px; background: var(--krem); border-radius: 10px; padding: 4px 14px; }
+.cari-input input { flex: 1; border: none; background: none; padding: 12px 0; font-size: 16px; outline: none; font-family: inherit; }
+.cari-input button { border: none; background: none; cursor: pointer; font-size: 16px; }
+.cari-info { font-size: 13px; color: var(--abu-teks); margin: 14px 4px 6px; }
+.cari-item { display: flex; align-items: center; gap: 14px; width: 100%; padding: 10px; border: none; background: none; border-radius: 10px; cursor: pointer; text-align: left; font: inherit; font-size: 14px; }
+.cari-item:hover { background: var(--krem); }
+.cari-item .thumb { width: 56px; height: 56px; font-size: 28px; flex-shrink: 0; }
+.cari-teks { flex: 1; }
+.cari-teks h4 { font-size: 15px; margin-bottom: 3px; }
+mark { background: var(--kuning); padding: 0 1px; border-radius: 2px; }

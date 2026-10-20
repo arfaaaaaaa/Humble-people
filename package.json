@@ -1,0 +1,21 @@
+{
+  "name": "humble-people",
+  "version": "1.0.0",
+  "description": "Toko online Humble People",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "cek": "node produk-cek.js"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.8",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.1",
+    "google-auth-library": "^11.3.1"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22.13"
+  }
+}

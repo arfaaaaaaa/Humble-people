@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Barang Baru - Humble People</title>
+<link rel="icon" href="logo-putih.png">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="katalog.css">
+<link rel="stylesheet" href="keranjang.css">
+<link rel="stylesheet" href="modal.css">
+<link rel="stylesheet" href="belanja.css">
+<link rel="stylesheet" href="search.css">
+</head>
+<body>
+
+<div class="promo-bar" id="promo-bar">
+  <a href="#" id="promo-link">FLASH SALE – SEMUA ITEM DI BAWAH Rp299.000 <u>Belanja sekarang</u></a>
+  <button type="button" id="promo-x" aria-label="Tutup">✕</button>
+</div>
+
+<header>
+  <div class="wadah nav">
+    <button type="button" class="ikon-btn menu-toggle" id="btn-menu" aria-label="Menu">☰</button>
+    <a href="#" class="logo" data-kat=""><img src="logo-putih.png" alt="Humble People"></a>
+    <nav class="menu" id="menu">
+      <a href="#" data-kat="">Barang Baru</a>
+      <a href="#" data-kat="Kaos">Kaos</a>
+      <a href="#" data-kat="Kemeja">Kemeja</a>
+      <a href="#" data-kat="Hoodie">Hoodie</a>
+      <a href="#" data-kat="Jaket">Jaket</a>
+      <a href="#" data-kat="Celana">Celana</a>
+      <a href="#" data-kat="Topi">Topi</a>
+      <a href="#" data-kat="sale" class="sale">Sale</a>
+    </nav>
+    <div class="kanan">
+      <button type="button" class="ikon-btn" id="btn-cari" aria-label="Cari produk"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+      <button type="button" class="ikon-btn" id="btn-profil" aria-label="Akun"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></button>
+      <button type="button" class="ikon-btn" id="btn-favorit" aria-label="Favorit"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.8-8 11-8 11z"/></svg><span class="badge" id="jumlah-favorit" hidden>0</span></button>
+      <button type="button" class="ikon-btn keranjang" id="buka-keranjang" aria-label="Buka keranjang"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg><span class="badge" id="jumlah-keranjang">0</span></button>
+    </div>
+  </div>
+</header>
+
+<main class="wadah katalog">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="#" data-kat="">Humble People</a><span>/</span><a href="#" data-kat="">Barang Baru</a><span>/</span><strong id="bc-aktif">Barang Baru</strong>
+  </nav>
+  <h1 id="judul-katalog">Barang Baru</h1>
+  <div class="sub-kat" id="sub-kat"></div>
+
+  <div class="toolbar">
+    <div class="tb-kiri">
+      <button type="button" class="btn-garis" id="btn-filter">☰ Filter</button>
+      <span id="jumlah-produk"></span>
+    </div>
+    <div class="tb-kanan">
+      <div class="kolom" id="kolom"><button type="button" data-k="2">2</button><button type="button" data-k="3">3</button><button type="button" data-k="4" class="aktif">4</button></div>
+      <label class="urut">Urutkan
+        <select id="urutkan">
+          <option value="rekomendasi">Rekomendasi</option>
+          <option value="terbaru">Terbaru</option>
+          <option value="termurah">Harga: terendah</option>
+          <option value="termahal">Harga: tertinggi</option>
+          <option value="diskon">Diskon terbesar</option>
+          <option value="nama">Nama A–Z</option>
+        </select>
+      </label>
+    </div>
+  </div>
+  <div class="chip-aktif" id="chip-aktif"></div>
+  <div class="produk-grid" id="daftar-produk"></div>
+  <div class="muat" id="muat"></div>
+</main>
+
+<section class="member">
+  <h2>Jadilah Member Humble People</h2>
+  <p>Simpan alamat, favorit, dan checkout lebih cepat setiap kali belanja.</p>
+  <button type="button" class="tombol" id="btn-member">Bergabung Sekarang</button>
+</section>
+
+<footer>
+  <div class="wadah">
+    <div class="footer-grid">
+      <div><h4>BELANJA</h4><ul>
+        <li><a href="#" data-kat="">Barang Baru</a></li><li><a href="#" data-kat="Kaos">Kaos</a></li>
+        <li><a href="#" data-kat="Hoodie">Hoodie</a></li><li><a href="#" data-kat="Celana">Celana</a></li><li><a href="#" data-kat="sale">Sale</a></li></ul></div>
+      <div><h4>BANTUAN</h4><ul>
+        <li><a href="#" data-info="kontak">Customer Service</a></li><li><a href="#" data-info="cara-pesan">Cara Pesan</a></li>
+        <li><a href="#" data-info="pengiriman">Pengiriman</a></li><li><a href="#" data-info="tukar">Pengembalian &amp; Tukar Ukuran</a></li></ul></div>
+      <div><h4>PERUSAHAAN</h4><ul>
+        <li><a href="#" data-info="tentang">Tentang Humble People</a></li><li><a href="#" data-info="kontak">Hubungi Kami</a></li></ul></div>
+      <div><h4>IKUTI KAMI</h4><ul>
+        <li><a href="#">Instagram</a></li><li><a href="#">TikTok</a></li><li><a href="#" data-info="kontak">WhatsApp</a></li></ul></div>
+    </div>
+    <div class="footer-bawah"><span>Indonesia | Rp</span><span>© 2026 Humble People. Semua hak dilindungi.</span></div>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+
+<aside class="panel-keranjang" id="panel-keranjang" aria-label="Keranjang belanja">
+  <div class="panel-header">
+    <h2>Keranjang Saya <small id="jumlah-teks"></small></h2>
+    <button type="button" class="tutup" id="tutup-keranjang" aria-label="Tutup keranjang">✕</button>
+  </div>
+
+  <div class="blok-ongkir" id="blok-ongkir">
+    <p id="teks-ongkir"></p>
+    <div class="bar"><div id="isi-bar"></div></div>
+  </div>
+
+  <div class="panel-isi" id="isi-keranjang"></div>
+
+  <div class="panel-footer" id="footer-keranjang">
+    <div class="baris-total"><span>Subtotal</span><strong id="subtotal">Rp0</strong></div>
+    <p class="catatan">Ongkos kirim dihitung setelah kamu konfirmasi pesanan.</p>
+    <button type="button" class="tombol btn-checkout" id="btn-checkout">Checkout</button>
+    <button type="button" class="btn-kosongkan" id="btn-kosongkan">Kosongkan keranjang</button>
+  </div>
+</aside>
+
+<div class="toast" id="toast"></div>
+
+<div class="overlay" id="overlay-filter"></div>
+<aside class="panel-filter" id="panel-filter" aria-label="Filter produk">
+  <div class="panel-header"><h2>Filter</h2><button type="button" class="tutup" id="tutup-filter" aria-label="Tutup filter">✕</button></div>
+  <div class="f-isi" id="f-isi"></div>
+  <div class="f-footer"><button type="button" class="btn-garis" id="f-reset">Hapus semua</button><button type="button" class="tombol" id="f-lihat">Lihat produk</button></div>
+</aside>
+
+<script src="konfigurasi.js"></script>
+<script src="data.js"></script>
+<script src="api.js"></script>
+<script src="modal.js"></script>
+<script src="keranjang.js"></script>
+<script src="favorit.js"></script>
+<script src="login.js"></script>
+<script src="google.js"></script>
+<script src="belanja.js"></script>
+<script src="pesanan.js"></script>
+<script src="info.js"></script>
+<script src="search.js"></script>
+<script src="katalog.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

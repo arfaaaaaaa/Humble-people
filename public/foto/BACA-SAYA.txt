@@ -1,0 +1,17 @@
+FOLDER FOTO PRODUK
+------------------
+1. Taruh foto produk di folder ini (langsung di sini, jangan di dalam folder lain).
+2. Di produk.json, tulis nama file fotonya pada produk yang bersangkutan:
+
+     "foto": "kaos-basic.jpg"                       (satu foto)
+     "foto": ["kaos-basic-1.jpg", "kaos-basic-2.jpg"]  (beberapa foto)
+
+   Foto pertama = foto utama. Foto kedua tampil saat kursor diarahkan ke kartu produk.
+   Semua foto tampil sebagai galeri di halaman detail produk.
+3. Jalankan ulang server (Ctrl+C lalu npm start).
+
+Saran foto:
+- Format .jpg, .png, atau .webp
+- Rasio 3:4 (tegak), contoh ukuran 900 x 1200 piksel
+- Ukuran file di bawah 300 KB supaya website cepat dibuka
+- Nama file huruf kecil, tanpa spasi (pakai tanda minus), contoh: hoodie-hitam-depan.jpg
